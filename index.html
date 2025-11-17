@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Chicken Clicker</title>
+
+  <link rel="stylesheet" href="style/popo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="body">
+  <header>
+    <h1>CHICKEN CLICKER</h1>
+    <h2 id="ovo">Egg Score: 0</h2>
+    <h2 id="conquista">Achievement: 0</h2>
+    <h2 id="cps">CPS: 0</h2>
+    <div id="imagem-alerta">
+      <img src="img/little.png" alt="Imagem do alerta">
+  </header>
+
+  <main>
+    <div id="campo-ovos"></div>
+
+    <div class="imagem">
+      <button id="botao">
+        <img src="img/galinha.gif" alt="Galinha">
+      </button>
+    </div>
+
+    <div id="efeito"></div>
+
+    <button id="buttonAlter" onclick="shop()">🛒 Loja</button>
+
+    <!-- MODAL DA LOJA -->
+    <div id="modalShop" class="modal hidden">
+      <div class="modal-content">
+        <h2>🛍️ Loja de Cursores</h2>
+        <div id="itensLoja" class="shop-items"></div>
+        <button class="close" onclick="fecharShop()">Fechar</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script/rico.js"></script>
+</body>
+</html>
